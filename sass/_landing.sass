@@ -1,0 +1,27 @@
+.land
+    background: $pri
+
+.land_inner
+    display: flex
+    justify-content: flex-end
+
+.land_inner > *
+    min-height: calc( 100vh - #{$headerHeight} )
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+
+.land_text
+    color: $onPri
+    width: calc( #{$documentWidth} / 2 )
+    padding: 0 1em 0 0
+    gap: 1.2em
+
+.land_hero
+    min-width: 50vw
+    display: flex
+    align-items: center
+
+.land_title
+    color: $light
