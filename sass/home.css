@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 @import url("//fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 * {
@@ -53,6 +54,7 @@ h1.heading {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5em;
+  font-weight: 700;
 }
 
 section {
@@ -60,7 +62,13 @@ section {
 }
 
 h2.section_heading {
+  padding-top: 3em;
   font-size: 2.4rem;
+}
+
+p.section_desc {
+  padding-top: 1em;
+  width: 60ch;
 }
 
 .header {
@@ -182,13 +190,7 @@ h2.section_heading {
 }
 
 .features_title {
-  padding-top: 3em;
   color: #010049;
-}
-
-.features_desc {
-  width: 50ch;
-  padding-top: 1em;
 }
 
 .features_grid {
@@ -224,5 +226,142 @@ h2.section_heading {
 
 .feature_icon {
   font-size: 5rem;
+}
+
+.pricing {
+  background: #363a70;
+  color: #b2b0ff;
+  padding-bottom: 8em;
+}
+
+.pricing h2 {
+  color: white;
+}
+
+.pricing_grid {
+  margin-top: 10em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.price {
+  background: #2e315f;
+  z-index: 1;
+  padding: 2em;
+  outline: 2px solid #8a8a8a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price_title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.price_desc {
+  margin: 2em 0 3em;
+  font-size: 0.9rem;
+}
+
+.price_divider {
+  background: rgba(138, 138, 138, 0.467);
+  height: 1px;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.price_featurevalue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+.price_footer {
+  gap: 0.5em;
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.price_cost {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.price_cost::before {
+  content: '₹';
+  font-size: 0.7em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.price_cost::after {
+  content: '/month';
+  text-transform: uppercase;
+  font-size: 0.3em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 0 12px 5px;
+}
+
+.price-emp {
+  z-index: 2;
+  outline: unset;
+  background: white;
+  color: #030090;
+  margin-top: -2em;
+  padding-top: 3em;
+  margin-bottom: -5px;
+  -webkit-box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.3);
+}
+
+.price-emp .price_title {
+  font-size: 2rem;
+  color: #010049;
+}
+
+.price-emp .price_cost {
+  color: #010049;
 }
 /*# sourceMappingURL=home.css.map */

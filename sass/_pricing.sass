@@ -1,0 +1,91 @@
+.pricing
+    background: $pri
+    color: $onPri
+    padding-bottom: 8em
+
+.pricing h2
+    color: $light
+
+.pricing_grid
+    margin-top: 10em
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+
+.price
+    background: darken($pri,5)
+    z-index: 1
+    padding: 2em
+    outline: 2px solid rgb(138, 138, 138)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.price_title
+    text-transform: uppercase
+    color: $light
+    font-size: 1.5rem
+
+.price_desc
+    margin: 2em 0 3em
+    font-size: 0.9rem
+
+.price_divider
+    background: rgba(138, 138, 138, 0.467)
+    height: 1px
+    width: 100%
+    margin: 1em 0
+
+.price_featurevalue
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 90%
+
+.price_footer
+    gap: 0.5em
+    margin-top: 3em
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+.price_cost
+    width: 50%
+    display: flex
+    align-items: center
+    height: 100%
+    justify-content: center
+    font-size: 2.5rem
+    font-weight: 700
+    color: $light
+
+.price_cost::before
+    content: '₹'
+    font-size: 0.7em
+    align-self: flex-start
+    margin-top: 5px
+    margin-right: 5px
+
+.price_cost::after
+    content: '/month'
+    text-transform: uppercase
+    font-size: 0.3em
+    align-self: flex-end
+    margin: 0 0 12px 5px
+
+.price-emp
+    z-index: 2
+    outline: unset
+    background: $light
+    color: $onTer
+    margin-top: -2em
+    padding-top: 3em
+    margin-bottom: -5px
+    box-shadow: 0 0 25px 5px rgba(white,0.3)
+
+    .price_title
+        font-size: 2rem
+        color: $dark
+
+    .price_cost
+        color: $dark
