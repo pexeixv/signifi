@@ -58,11 +58,10 @@ h1.heading {
 }
 
 section {
-  min-height: 100vh;
+  padding: 5em 0 7em;
 }
 
 h2.section_heading {
-  padding-top: 3em;
   font-size: 2.4rem;
 }
 
@@ -135,6 +134,7 @@ p.section_desc {
 .land {
   background: #363a70;
   min-height: unset;
+  padding: unset;
 }
 
 .land_inner {
@@ -363,5 +363,160 @@ p.section_desc {
 
 .price-emp .price_cost {
   color: #010049;
+}
+
+.tech {
+  background: #e1eaf8;
+  color: #030090;
+}
+
+.tech_title {
+  color: #010049;
+}
+
+.tech_image {
+  margin: 5em auto 2em;
+  display: block;
+}
+
+.tech_text {
+  font-size: 1.25rem;
+}
+
+.faq {
+  min-height: unset;
+  padding-bottom: 5em;
+  background: #363a70;
+  color: #b2b0ff;
+}
+
+.faq_title {
+  color: white;
+}
+
+.faq_questions {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+.faq details {
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+
+.faq summary {
+  outline: none;
+  padding: 1em 2em;
+  color: white;
+  background: #787cb1;
+  z-index: 2;
+}
+
+.faq_answer {
+  background: #2a2b4f;
+  padding: 1em 2em;
+  z-index: -1;
+}
+
+.contact {
+  padding-top: 0;
+  background: #363a70;
+  color: #b2b0ff;
+}
+
+.contact_title {
+  color: white;
+}
+
+.contact_name, .contact_email, .contact_message {
+  background: #787cb1;
+  color: white;
+}
+
+.contact input, .contact textarea {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  padding: 1em;
+}
+
+.comtact_submit {
+  cursor: pointer;
+}
+
+.contact_form {
+  width: 90%;
+  max-width: 800px;
+  margin: 4em auto 0;
+}
+
+.contact_message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5em 2em;
+  height: 150px;
+}
+
+.contact_submit {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: white;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_row {
+  gap: 1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_row * {
+  width: 100%;
+}
+
+.contact_message {
+  margin: 1em 0;
+  width: 100%;
 }
 /*# sourceMappingURL=home.css.map */
