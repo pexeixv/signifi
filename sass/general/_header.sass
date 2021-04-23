@@ -2,7 +2,9 @@
     height: $headerHeight
     background: $pri
     color: $onPri
-    position: relative
+    position: fixed
+    width: 100%
+    z-index: 5
 
 .header_inner
     display: flex
@@ -18,6 +20,8 @@
 
 .header_image
     height: 55px
+    &:hover
+        transform: scale(1.05)
 
 .header_title
     color: $light
@@ -31,9 +35,20 @@
     justify-content: flex-end
 
 .header_link
+    font-weight: 700
     color: $onPri
     text-transform: uppercase
     font-size: 1.2rem
+
+.header_link::after
+    display: block
+    content: ''
+    background: $light
+    width: 0
+    height: 4px
+
+.header_link:hover::after
+    width: 100%
 
 .header .hamburger
     text-align: center
@@ -46,12 +61,15 @@
         .hamburger
             display: unset
     .header_nav
+        z-index: 4
+        box-shadow: 0 10px 10px rgba($dark,0.20)
+        border-radius: 0 0 5em 5rem
         display: none
         justify-content: space-evenly
         flex-direction: column
         background: $light
-        width: 90vw
-        height: 90vh
+        width: 100vw
+        height: 70vh
         position: absolute
         top: 100%
         left: 50%
@@ -63,3 +81,12 @@
 
 nav.nav_show
     display: flex
+
+header.header_scroll
+    background: $onPri
+    .hamburger
+        color: $pri
+    a
+        color: $pri
+    .header_link::after
+        background: $dark

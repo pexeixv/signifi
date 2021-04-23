@@ -21,11 +21,12 @@
                 <span class="header_title"></span>
             </a>
             <nav class="header_nav ">
-                <a href="#" class="header_link">Home</a>
-                <a href="#" class="header_link">Features</a>
-                <a href="#" class="header_link">Pricing</a>
-                <a href="#" class="header_link">About</a>
-                <a href="#" class="header_link">FAQ</a>
+                <a href="#" class="header_link" data-display="block">Home</a>
+                <a href="#features" class="header_link" data-display="block">Features</a>
+                <a href="#pricing" class="header_link" data-display="block">Pricing</a>
+                <a href="#technical" class="header_link" data-display="block">About</a>
+                <a href="#faq" class="header_link" data-display="block">FAQ</a>
+                <a href="#contact" class="header_link" data-display="block">Contact</a>
             </nav>
             <i class="fas fa-bars hamburger"></i>
         </div>
@@ -41,18 +42,43 @@
                     hamburger.classList.remove('fa-times');
                     hamburger.classList.add('fa-bars');
                 }
-            });</script>
+            });
+            var header = document.querySelector('header');
+            var logo = document.querySelector('.header_image');
+
+            window.addEventListener('scroll', () => {
+                var scroll = this.scrollY;
+                if (scroll > 50) {
+                    header.classList.add('header_scroll');
+                    logo.src = './img/logo.png'
+                } else {
+                    header.classList.remove('header_scroll');
+                    logo.src = './img/logo.bib'
+                }
+
+            })
+
+            var links = document.querySelectorAll('.header_link')
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    nav.classList.remove('nav_show');
+                    hamburger.classList.remove('fa-times');
+                    hamburger.classList.add('fa-bars');
+                })
+            })
+
+        </script>
 
     </header>
 
 
-    <section class="land land_outer ">
+    <section class="land land_outer " id="home">
         <div class="land_inner ">
             <div class="land_text">
                 <h1 class="land_title heading">Wordpress hosting simplified!</h1>
                 <p class="land_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
                     luctus venenatis</p>
-                <a href="#" class="land_button button">
+                <a href="#features" class="land_button button">
                     <span class="button_text">Explore</span>
                     <i class="fas fa-chevron-down"></i>
                 </a>
@@ -65,7 +91,7 @@
 
 
 
-    <section class="features features_outer outer">
+    <section id="features" class="features features_outer outer">
         <div class="features_inner inner">
 
             <h2 class="features_title section_heading">Why choose us?</h2>
@@ -107,7 +133,7 @@
     </section>
 
 
-    <section class="pricing pricing_outer outer">
+    <section id="pricing" class="pricing pricing_outer outer">
         <div class="pricing_inner inner">
             <h2 class="pricing_title section_heading">
                 Flexible Pricing
@@ -276,7 +302,7 @@
 
 
 
-    <section class="tech tech_outer outer">
+    <section class="tech tech_outer outer" id="technical">
         <div class="tech_inner inner">
             <h2 class="tech_title section_heading">Technical</h2>
             <img class="tech_image" src="./img/small-static-file.png" alt="Small Static File">
@@ -290,7 +316,7 @@
     </section>
 
 
-    <section class="faq faq_outer outer">
+    <section class="faq faq_outer outer" id="faq">
         <div class="faq_inner inner">
             <h2 class="faq_title section_heading">Frequently Asked Questions</h2>
             <p class="faq_desc section_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
@@ -351,10 +377,10 @@
         </div>
     </section>
 
-    <section class="contact contact_outer outer">
+    <section class="contact contact_outer outer" id="contact">
         <div class="contact_inner inner">
             <h2 class="contact_title section_heading">
-                Still have a question?
+                Still have a doubt?
             </h2>
             <p class="contact_desc section_desc">
                 Send us your question and we shall get back to you
