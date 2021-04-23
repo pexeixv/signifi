@@ -64,7 +64,7 @@
         z-index: 4
         box-shadow: 0 10px 10px rgba($dark,0.20)
         border-radius: 0 0 5em 5rem
-        display: none
+        display: flex
         justify-content: space-evenly
         flex-direction: column
         background: $light
@@ -74,13 +74,15 @@
         top: 100%
         left: 50%
         transform: translateX(-50%)
+        height: 0
+        overflow: hidden
         a
             font-weight: 700
             font-size: 2rem
             color: $pri
 
 nav.nav_show
-    display: flex
+    height: 70vh
 
 header.header_scroll
     background: $onPri

@@ -57,6 +57,7 @@ h1.heading {
           align-items: center;
   gap: 0.5em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 section {
@@ -181,7 +182,9 @@ p.section_desc {
     -webkit-box-shadow: 0 10px 10px rgba(1, 0, 73, 0.2);
             box-shadow: 0 10px 10px rgba(1, 0, 73, 0.2);
     border-radius: 0 0 5em 5rem;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -197,6 +200,8 @@ p.section_desc {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+    height: 0;
+    overflow: hidden;
   }
   .header_nav a {
     font-weight: 700;
@@ -206,9 +211,7 @@ p.section_desc {
 }
 
 nav.nav_show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 70vh;
 }
 
 header.header_scroll {
@@ -375,6 +378,12 @@ header.header_scroll .header_link::after {
   .feature {
     max-width: 400px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .features_grid {
+    margin-top: 3em;
   }
 }
 
@@ -551,6 +560,12 @@ header.header_scroll .header_link::after {
   font-size: 1.25rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .tech_image {
+    margin-top: 2em;
+  }
+}
+
 .faq {
   min-height: unset;
   padding-bottom: 5em;
@@ -592,6 +607,7 @@ header.header_scroll .header_link::after {
   padding-top: 0;
   background: #363a70;
   color: #b2b0ff;
+  padding-bottom: 3em;
 }
 
 .contact_title {
