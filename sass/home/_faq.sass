@@ -29,12 +29,13 @@
     padding: 1em 2em
     z-index: -1
 
-// .faq details[open] summary ~ *
-//     animation: sweep 1000ms ease-out
+.faq details[open] summary ~ *
+    animation: sweep 300ms ease-out
 
-// @keyframes sweep
-//     from
-//         min-height: 0
-//         height: 0
-//     to
-//         min-height: unset
+@keyframes sweep
+    from
+        margin-top: -10px
+        opacity: 0
+    to
+        margin-top: -0px
+        opacity: 1

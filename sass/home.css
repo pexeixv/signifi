@@ -603,6 +603,33 @@ header.header_scroll .header_link::after {
   z-index: -1;
 }
 
+.faq details[open] summary ~ * {
+  -webkit-animation: sweep 300ms ease-out;
+          animation: sweep 300ms ease-out;
+}
+
+@-webkit-keyframes sweep {
+  from {
+    margin-top: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-top: -0px;
+    opacity: 1;
+  }
+}
+
+@keyframes sweep {
+  from {
+    margin-top: -10px;
+    opacity: 0;
+  }
+  to {
+    margin-top: -0px;
+    opacity: 1;
+  }
+}
+
 .contact {
   padding-top: 0;
   background: #363a70;

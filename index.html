@@ -31,46 +31,6 @@
             <i class="fas fa-bars hamburger"></i>
         </div>
 
-        <script>var hamburger = document.querySelector('.hamburger');
-            var nav = document.querySelector('.header_nav');
-            hamburger.addEventListener('click', () => {
-                nav.classList.toggle('nav_show');
-                if (hamburger.classList.contains('fa-bars')) {
-                    hamburger.classList.add('fa-times');
-                    hamburger.classList.remove('fa-bars');
-                } else {
-                    hamburger.classList.remove('fa-times');
-                    hamburger.classList.add('fa-bars');
-                }
-            });
-            var header = document.querySelector('header');
-            var logo = document.querySelector('.header_image');
-
-            window.addEventListener('scroll', () => {
-                var scroll = this.scrollY;
-                if (scroll > 50) {
-                    header.classList.add('header_scroll');
-                    logo.src = './img/logo.png'
-                } else {
-                    header.classList.remove('header_scroll');
-                    logo.src = './img/logo.bib'
-                }
-
-            })
-
-            var links = document.querySelectorAll('.header_link')
-            links.forEach(link => {
-                link.addEventListener('click', () => {
-                    nav.classList.remove('nav_show');
-                    hamburger.classList.remove('fa-times');
-                    hamburger.classList.add('fa-bars');
-                })
-            })
-
-
-
-        </script>
-
     </header>
 
 
@@ -327,52 +287,14 @@
 
             <div class="faq_questions">
 
-                <details class="faq_qa">
-                    <summary class="faq_question">
-                        A question that is frequently asked
-                    </summary>
-                    <p class="faq_answer">
-                        Answer to that question Answer to that question Answer to that question Answer to that question
-                        Answer to that question Answer to that question
-                    </p>
-                </details>
-
-                <details class="faq_qa">
-                    <summary class="faq_question">
-                        A question that is frequently asked
-                    </summary>
-                    <p class="faq_answer">
-                        Answer to that question
-                    </p>
-                </details>
-
-                <details class="faq_qa">
-                    <summary class="faq_question">
-                        A question that is frequently asked
-                    </summary>
-                    <p class="faq_answer">
-                        Answer to that question
-                    </p>
-                </details>
-
-                <details class="faq_qa">
-                    <summary class="faq_question">
-                        A question that is frequently asked
-                    </summary>
-                    <p class="faq_answer">
-                        Answer to that question
-                    </p>
-                </details>
-
-                <details class="faq_qa">
-                    <summary class="faq_question">
-                        A question that is frequently asked
-                    </summary>
-                    <p class="faq_answer">
-                        Answer to that question
-                    </p>
-                </details>
-
+                <template class="faq_template">
+                    <details class="faq_qa">
+                        <summary class="faq_question">
+                        </summary>
+                        <p class="faq_answer">
+                        </p>
+                    </details>
+                </template>
 
             </div>
 
