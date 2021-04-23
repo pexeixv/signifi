@@ -7,6 +7,7 @@
     color: $light
 
 .pricing_grid
+    justify-items: center
     margin-top: 10em
     display: grid
     grid-template-columns: repeat(3,1fr)
@@ -89,3 +90,15 @@
 
     .price_cost
         color: $dark
+
+@media screen and ( max-width: 1200px )
+    .price
+        width: 90%
+        max-width: 500px
+    .pricing_grid
+        grid-template-columns: 1fr
+        margin-top: 4em
+        grid-gap: 2em
+    .price-emp
+        margin: 0
+        padding: 2em

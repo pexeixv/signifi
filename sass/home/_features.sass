@@ -6,6 +6,7 @@
     color: $dark
 
 .features_grid
+    justify-items: center
     margin-top: 8em
     display: grid
     grid-template-columns: repeat(3,1fr)
@@ -21,7 +22,15 @@
     gap: 3em
 
 .feature_title
+    text-align: center
     text-transform: uppercase
 
 .feature_icon
     font-size: 5rem
+
+@media screen and ( max-width: 1100px )
+    .features_grid
+        grid-template-columns: 1fr
+    .feature
+        max-width: 400px
+        text-align: center

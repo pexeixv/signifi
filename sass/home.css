@@ -68,6 +68,17 @@ h2.section_heading {
 p.section_desc {
   padding-top: 1em;
   width: 60ch;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 1250px) {
+  h2.section_heading {
+    text-align: center;
+  }
+  p.section_desc {
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .header {
@@ -227,6 +238,46 @@ nav.nav_show {
   color: white;
 }
 
+@media screen and (max-width: 1300px) {
+  .land_inner {
+    min-height: calc( 100vh - 70px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+  }
+  .land_inner > * {
+    min-height: unset;
+  }
+  .land_inner .land_hero {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-box-flex: 40;
+        -ms-flex: 40;
+            flex: 40;
+  }
+  .land_inner .land_text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    -webkit-box-flex: 60;
+        -ms-flex: 60;
+            flex: 60;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .land_inner .land_button {
+    margin: 0 auto;
+  }
+}
+
 .features {
   background: #e1eaf8;
   color: #030090;
@@ -237,6 +288,7 @@ nav.nav_show {
 }
 
 .features_grid {
+  justify-items: center;
   margin-top: 8em;
   display: -ms-grid;
   display: grid;
@@ -264,11 +316,23 @@ nav.nav_show {
 }
 
 .feature_title {
+  text-align: center;
   text-transform: uppercase;
 }
 
 .feature_icon {
   font-size: 5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .features_grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .feature {
+    max-width: 400px;
+    text-align: center;
+  }
 }
 
 .pricing {
@@ -282,6 +346,7 @@ nav.nav_show {
 }
 
 .pricing_grid {
+  justify-items: center;
   margin-top: 10em;
   display: -ms-grid;
   display: grid;
@@ -406,6 +471,23 @@ nav.nav_show {
 
 .price-emp .price_cost {
   color: #010049;
+}
+
+@media screen and (max-width: 1200px) {
+  .price {
+    width: 90%;
+    max-width: 500px;
+  }
+  .pricing_grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 4em;
+    grid-gap: 2em;
+  }
+  .price-emp {
+    margin: 0;
+    padding: 2em;
+  }
 }
 
 .tech {
@@ -561,5 +643,14 @@ textarea:-ms-input-placeholder {
 .contact_message {
   margin: 1em 0;
   width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=home.css.map */

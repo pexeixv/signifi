@@ -27,3 +27,24 @@
 
 .land_title
     color: $light
+
+@media screen and ( max-width: 1300px )
+    .land_inner
+        min-height: calc( 100vh - #{$headerHeight}
+        flex-direction: column
+        text-align: center
+        gap: 1.5em
+        & > *
+            min-height: unset
+        .land_hero
+            width: 90%
+            margin: 0 auto
+            flex: 40
+        .land_text
+            order: 2
+            width: 100%
+            flex: 60
+            justify-content: flex-start
+            align-items: center
+        .land_button
+            margin: 0 auto
