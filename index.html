@@ -20,14 +20,29 @@
                 <img src="./img/logo.bib" alt="Signifi Logo" class="header_image">
                 <span class="header_title"></span>
             </a>
-            <nav class="header_nav">
+            <nav class="header_nav ">
                 <a href="#" class="header_link">Home</a>
                 <a href="#" class="header_link">Features</a>
                 <a href="#" class="header_link">Pricing</a>
                 <a href="#" class="header_link">About</a>
                 <a href="#" class="header_link">FAQ</a>
             </nav>
+            <i class="fas fa-bars hamburger"></i>
         </div>
+
+        <script>var hamburger = document.querySelector('.hamburger');
+            var nav = document.querySelector('.header_nav');
+            hamburger.addEventListener('click', () => {
+                nav.classList.toggle('nav_show');
+                if (hamburger.classList.contains('fa-bars')) {
+                    hamburger.classList.add('fa-times');
+                    hamburger.classList.remove('fa-bars');
+                } else {
+                    hamburger.classList.remove('fa-times');
+                    hamburger.classList.add('fa-bars');
+                }
+            });</script>
+
     </header>
 
 

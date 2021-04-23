@@ -1,0 +1,65 @@
+.header
+    height: $headerHeight
+    background: $pri
+    color: $onPri
+    position: relative
+
+.header_inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 100%
+
+.header_logo
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 1em
+
+.header_image
+    height: 55px
+
+.header_title
+    color: $light
+    font-weight: 700
+    font-size: 2rem
+
+.header_nav
+    display: flex
+    gap: 1.5em
+    align-items: center
+    justify-content: flex-end
+
+.header_link
+    color: $onPri
+    text-transform: uppercase
+    font-size: 1.2rem
+
+.header .hamburger
+    text-align: center
+    cursor: pointer
+    display: none
+    font-size: 1.5rem
+
+@media screen and ( max-width: 1000px )
+    .header
+        .hamburger
+            display: unset
+    .header_nav
+        display: none
+        justify-content: space-evenly
+        flex-direction: column
+        background: $light
+        width: 90vw
+        height: 90vh
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translateX(-50%)
+        a
+            font-weight: 700
+            font-size: 2rem
+            color: $pri
+
+nav.nav_show
+    display: flex
