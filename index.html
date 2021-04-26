@@ -8,14 +8,16 @@
     <title>Signifi</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="sass/home.css">
-    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
 
+
+
+
     <header class="header header_outer outer">
-        <div class="header_inner inner">
+        <div class="header_inner inner" data-aos="fade-down" data-aos-delay="200">
             <a class="header_logo" href="#">
                 <img src="./img/logo.bib" alt="Signifi Logo" class="header_image">
                 <span class="header_title"></span>
@@ -36,7 +38,14 @@
 
     <section class="land land_outer " id="home">
         <div class="land_inner ">
-            <div class="land_text">
+            <noscript>
+                <div class="noscript">
+                    <h1 class="land_title heading">Please Enable Javascript</h1>
+                    <a href="//enablejavascript.io">How to enable Javascript?</a>
+                </div>
+            </noscript>
+            <div class="land_text" data-aos="fade-right">
+
                 <h1 class="land_title heading">Wordpress hosting simplified!</h1>
                 <p class="land_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
                     luctus venenatis</p>
@@ -46,7 +55,7 @@
                 </a>
             </div>
             <div class="land_hero">
-                <img src="./img/hero.svg" alt="Wordpress hosting" class="land_image">
+                <img src="./img/hero.svg" alt="Wordpress hosting" class="land_image injectable" data-aos="fade-left">
             </div>
         </div>
     </section>
@@ -57,13 +66,14 @@
         <div class="features_inner inner">
 
             <h2 class="features_title section_heading">Why choose us?</h2>
-            <p class="features_desc section_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            <p class="features_desc section_desc">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit ut aliquam,
                 purus sit amet
                 luctus venenatis</p>
 
 
             <div class="features_grid">
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="300">
                     <h3 class="feature_title">
                         feature number one
                     </h3>
@@ -72,7 +82,7 @@
                         sit
                         amet luctus venenatis</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="600">
                     <h3 class="feature_title">
                         feature number two
                     </h3>
@@ -81,7 +91,7 @@
                         sit
                         amet luctus venenatis</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-up" data-aos-delay="900">
                     <h3 class="feature_title">
                         feature number three
                     </h3>
@@ -107,7 +117,7 @@
 
 
             <div class="pricing_grid">
-                <div class="price">
+                <div class="price" data-aos="fade-right" data-aos-delay="400">
                     <h4 class="price_title">Basic</h4>
                     <p class="price_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                         amet luctus venenatis</p>
@@ -156,7 +166,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="price price-emp">
+                <div class="price price-emp" data-aos="fade-up" data-aos-delay="200">
                     <h4 class="price_title">Basic</h4>
                     <p class="price_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                         amet luctus venenatis</p>
@@ -205,7 +215,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="price">
+                <div class="price" data-aos="fade-left" data-aos-delay="400">
                     <h4 class="price_title">Basic</h4>
                     <p class="price_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
                         amet luctus venenatis</p>
@@ -267,8 +277,8 @@
     <section class="tech tech_outer outer" id="technical">
         <div class="tech_inner inner">
             <h2 class="tech_title section_heading">Technical</h2>
-            <img class="tech_image" src="./img/small-static-file.png" alt="Small Static File">
-            <p class="tech_text">
+            <img class="tech_image" src="./img/small-static-file.png" alt="Small Static File" data-aos="fade-up">
+            <p class="tech_text" data-aos="fade-right">
                 We compared web server response times when requesting small static files.
                 Comparing small files is a standard practice for benchmarking, as this allows you to evaluate server
                 performance without network saturation becoming an issue. In our testing, LiteSpeed outperformed
@@ -288,7 +298,7 @@
             <div class="faq_questions">
 
                 <template class="faq_template">
-                    <details class="faq_qa">
+                    <details class="faq_qa" data-aos="fade-up">
                         <summary class="faq_question">
                         </summary>
                         <p class="faq_answer">
@@ -309,7 +319,7 @@
             <p class="contact_desc section_desc">
                 Send us your question and we shall get back to you
             </p>
-            <form action="" class="contact_form">
+            <form action="" class="contact_form" data-aos="fade-up">
                 <div class="contact_row">
                     <input type="text" class="contact_name" placeholder="Name" required name="name">
                     <input type="email" class="contact_name" placeholder="Email ID" required name="email">
@@ -326,6 +336,16 @@
 
 
 
+
+    <script src="./js/svg-inject.min.js"></script>
+    <script src="./js/rellax.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+
+
+
+    </script>
 
 </body>
 

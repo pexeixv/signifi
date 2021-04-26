@@ -19,13 +19,11 @@ window.addEventListener('scroll', () => {
     var scroll = this.scrollY;
     if (scroll > 50) {
         header.classList.add('header_scroll');
-        logo.src = './img/logo.png'
     } else {
         header.classList.remove('header_scroll');
-        logo.src = './img/logo.bib'
     }
-
 })
+
 
 var links = document.querySelectorAll('.header_link')
 links.forEach(link => {
@@ -82,4 +80,34 @@ faqs.forEach(faq => {
     faqTemplate.querySelector('summary').innerText = faq.q;
     faqTemplate.querySelector('p').innerText = faq.a;
     faqContainer.append(faqTemplate);
+})
+
+
+
+
+
+
+var onLoadSvg = async () => {
+    await SVGInject(document.querySelectorAll("img.injectable"));
+    var rellax = new Rellax('.rellax', {
+        speed: -2,
+        center: false,
+        wrapper: null,
+        round: true,
+        vertical: true,
+        horizontal: false
+    });
+
+}
+onLoadSvg();
+AOS.init();
+
+
+
+document.querySelectorAll('.section_heading').forEach(h2 => {
+    h2.setAttribute('data-aos', "fade-right")
+})
+document.querySelectorAll('.section_desc').forEach(p => {
+    p.setAttribute('data-aos', 'fade-right');
+    p.setAttribute('data-aos-delay', '50');
 })

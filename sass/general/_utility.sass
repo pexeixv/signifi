@@ -20,6 +20,20 @@ h1.heading
     font-weight: 700
     cursor: pointer
 
+    &:hover
+        & span
+            text-decoration: underline
+        & .fa-chevron-down
+            top: 3px
+        & .fa-chevron-right
+            left: 3px
+
+    i
+        transition: $trans
+        position: relative
+        top: 0
+        left: 0
+
 section
     // min-height: 100vh
     padding: 5em 0 7em
