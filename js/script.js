@@ -16,7 +16,7 @@ var header = document.querySelector('header');
 var logo = document.querySelector('.header_image');
 
 window.addEventListener('scroll', () => {
-    var scroll = this.scrollY;
+    var scroll = window.scrollY;
     if (scroll > 50) {
         header.classList.add('header_scroll');
     } else {
@@ -34,59 +34,6 @@ links.forEach(link => {
     })
 })
 
-
-
-// FAQ Section
-
-var faqs = [
-    {
-        'id': 1,
-        'q': 'Question ',
-        'a': 'Answer'
-    },
-    {
-        'id': 1,
-        'q': 'Question',
-        'a': 'Answer'
-    },
-    {
-        'id': 1,
-        'q': 'Question',
-        'a': 'Answer'
-    },
-    {
-        'id': 1,
-        'q': 'Question',
-        'a': 'Answer'
-    }, {
-        'id': 1,
-        'q': 'Question',
-        'a': 'Answer'
-    },
-    {
-        'id': 1,
-        'q': 'Question',
-        'a': 'Answer'
-    },
-
-]
-
-
-var faqContainer = document.querySelector('.faq_questions');
-
-faqs.forEach(faq => {
-    var faqTemplate = faqContainer.querySelector('.faq_template').content.cloneNode(true);
-
-    faqTemplate.querySelector('summary').innerText = faq.q;
-    faqTemplate.querySelector('p').innerText = faq.a;
-    faqContainer.append(faqTemplate);
-})
-
-
-
-
-
-
 var onLoadSvg = async () => {
     await SVGInject(document.querySelectorAll("img.injectable"));
     var rellax = new Rellax('.rellax', {
@@ -102,6 +49,21 @@ var onLoadSvg = async () => {
 onLoadSvg();
 AOS.init();
 
+// FAQ Section
+
+import { faqs } from '../db/faq.js';
+
+var faqContainer = document.querySelector('.faq_questions');
+
+faqs.forEach(faq => {
+    var faqTemplate = faqContainer.querySelector('.faq_template').content.cloneNode(true);
+    faqTemplate.querySelector('h5.faq_question').innerText = faq.q;
+    faqTemplate.querySelector('p.faq_answer').innerText = faq.a;
+    faqContainer.append(faqTemplate);
+})
+
+
+
 
 
 document.querySelectorAll('.section_heading').forEach(h2 => {
@@ -110,4 +72,35 @@ document.querySelectorAll('.section_heading').forEach(h2 => {
 document.querySelectorAll('.section_desc').forEach(p => {
     p.setAttribute('data-aos', 'fade-right');
     p.setAttribute('data-aos-delay', '50');
+})
+
+
+
+
+
+
+
+
+// FAQ Section
+
+var faqArray = document.querySelectorAll('.faq_header');
+
+faqArray.forEach(faq => {
+    faq.addEventListener('click', e => {
+        var plus1 = faq.querySelector('.faq_plus1');
+        // if (e.target !== faq) {
+        //     faq.nextElementSibling.classList.remove('faq_clicked')
+        //     plus1.classList.remove('faq_clicked')
+        // }
+        console.log('r');
+        if (!faq.nextElementSibling.classList.contains('faq_clicked')) {
+            faq.nextElementSibling.classList.add('faq_clicked')
+            plus1.classList.add('faq_clicked')
+            console.log('f');
+        } else {
+            faq.nextElementSibling.classList.remove('faq_clicked')
+            plus1.classList.remove('faq_clicked')
+            console.log('t');
+        }
+    })
 })
