@@ -780,7 +780,7 @@ header.header_scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.4em;
+  gap: 0.5em;
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
@@ -829,11 +829,11 @@ header.header_scroll {
 }
 
 .faq_footer.faq_clicked {
-  padding: 0 2em 2em;
+  padding: 0 2em 1em;
   max-height: 5000px;
 }
 
-.faq_footer.faq_clicked .faq_answer1 {
+.faq_footer.faq_clicked .faq_answer {
   height: auto;
 }
 
@@ -864,6 +864,12 @@ header.header_scroll {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 800px) {
+  .faq_question {
+    font-size: 1rem;
+  }
+}
+
 .contact {
   padding-top: 0;
   background: #363a70;
@@ -887,7 +893,7 @@ header.header_scroll {
   padding: 1em;
 }
 
-.comtact_submit {
+.contact_submit {
   cursor: pointer;
 }
 

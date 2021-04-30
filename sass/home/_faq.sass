@@ -18,7 +18,7 @@
 .faq_questions
     display: flex
     flex-direction: column
-    gap: 0.4em
+    gap: 0.5em
     width: 90%
     max-width: 800px
     margin: 0 auto
@@ -50,10 +50,9 @@
     height: auto
 
 .faq_footer.faq_clicked
-    padding: 0 2em 2em
-    // margin-top: 0.7em
+    padding: 0 2em 1em
     max-height: 5000px
-    .faq_answer1
+    .faq_answer
         height: auto
 
 .faq_plus
@@ -75,3 +74,7 @@
 
 .faq_plus1.faq_clicked
     transform: translate(-50%,-50%)
+
+@media screen and ( max-width: 800px  )
+    .faq_question
+        font-size: 1rem
