@@ -78,9 +78,6 @@ document.querySelectorAll('.section_desc').forEach(p => {
 
 
 
-
-
-
 // FAQ Section
 
 var faqArray = document.querySelectorAll('.faq_header');
@@ -92,15 +89,12 @@ faqArray.forEach(faq => {
         //     faq.nextElementSibling.classList.remove('faq_clicked')
         //     plus1.classList.remove('faq_clicked')
         // }
-        console.log('r');
         if (!faq.nextElementSibling.classList.contains('faq_clicked')) {
             faq.nextElementSibling.classList.add('faq_clicked')
             plus1.classList.add('faq_clicked')
-            console.log('f');
         } else {
             faq.nextElementSibling.classList.remove('faq_clicked')
             plus1.classList.remove('faq_clicked')
-            console.log('t');
         }
     })
 })
