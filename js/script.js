@@ -98,3 +98,24 @@ faqArray.forEach(faq => {
         }
     })
 })
+
+
+
+
+// Pricing section
+
+var priceCards = document.querySelectorAll('.pricing_grid .price');
+var featuresCards = document.querySelectorAll('.features_grid .feature');
+
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+if (vw <= 1200) {
+    priceCards.forEach(priceCard => {
+        priceCard.removeAttribute('data-aos-delay');
+        priceCard.setAttribute('data-aos', 'fade-up');
+    })
+    featuresCards.forEach(featureCards => {
+        featureCards.removeAttribute('data-aos-delay');
+        featureCards.setAttribute('data-aos', 'fade-up');
+    })
+
+}
