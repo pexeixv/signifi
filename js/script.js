@@ -1,38 +1,38 @@
 // Header
 
-var hamburger = document.querySelector('.hamburger');
-var nav = document.querySelector('.header_nav');
-hamburger.addEventListener('click', () => {
-    nav.classList.toggle('nav_show');
-    if (hamburger.classList.contains('fa-bars')) {
-        hamburger.classList.add('fa-times');
-        hamburger.classList.remove('fa-bars');
-    } else {
-        hamburger.classList.remove('fa-times');
-        hamburger.classList.add('fa-bars');
-    }
-});
-var header = document.querySelector('header');
-var logo = document.querySelector('.header_image');
+// var hamburger = document.querySelector('.hamburger');
+// var nav = document.querySelector('.header_nav');
+// hamburger.addEventListener('click', () => {
+//     nav.classList.toggle('nav_show');
+//     if (hamburger.classList.contains('fa-bars')) {
+//         hamburger.classList.add('fa-times');
+//         hamburger.classList.remove('fa-bars');
+//     } else {
+//         hamburger.classList.remove('fa-times');
+//         hamburger.classList.add('fa-bars');
+//     }
+// });
+// var header = document.querySelector('header');
+// var logo = document.querySelector('.header_image');
 
-window.addEventListener('scroll', () => {
-    var scroll = window.scrollY;
-    if (scroll > 50) {
-        header.classList.add('header_scroll');
-    } else {
-        header.classList.remove('header_scroll');
-    }
-})
+// window.addEventListener('scroll', () => {
+//     var scroll = window.scrollY;
+//     if (scroll > 50) {
+//         header.classList.add('header_scroll');
+//     } else {
+//         header.classList.remove('header_scroll');
+//     }
+// })
 
 
-var links = document.querySelectorAll('.header_link')
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('nav_show');
-        hamburger.classList.remove('fa-times');
-        hamburger.classList.add('fa-bars');
-    })
-})
+// var links = document.querySelectorAll('.header_link')
+// links.forEach(link => {
+//     link.addEventListener('click', () => {
+//         nav.classList.remove('nav_show');
+//         hamburger.classList.remove('fa-times');
+//         hamburger.classList.add('fa-bars');
+//     })
+// })
 
 var onLoadSvg = async () => {
     await SVGInject(document.querySelectorAll("img.injectable"));
