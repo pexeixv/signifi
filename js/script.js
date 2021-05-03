@@ -1,4 +1,4 @@
-// Header
+// // Header
 
 // var hamburger = document.querySelector('.hamburger');
 // var nav = document.querySelector('.header_nav');
@@ -34,67 +34,67 @@
 //     })
 // })
 
-var onLoadSvg = async () => {
-    await SVGInject(document.querySelectorAll("img.injectable"));
-    var rellax = new Rellax('.rellax', {
-        speed: -2,
-        center: false,
-        wrapper: null,
-        round: true,
-        vertical: true,
-        horizontal: false
-    });
+// var onLoadSvg = async () => {
+//     await SVGInject(document.querySelectorAll("img.injectable"));
+//     var rellax = new Rellax('.rellax', {
+//         speed: -2,
+//         center: false,
+//         wrapper: null,
+//         round: true,
+//         vertical: true,
+//         horizontal: false
+//     });
 
-}
-onLoadSvg();
+// }
+// onLoadSvg();
 AOS.init();
 
-// FAQ Section
+// // FAQ Section
 
-import { faqs } from '../db/faq.js';
+// import { faqs } from '../db/faq.js';
 
-var faqContainer = document.querySelector('.faq_questions');
+// var faqContainer = document.querySelector('.faq_questions');
 
-faqs.forEach(faq => {
-    var faqTemplate = faqContainer.querySelector('.faq_template').content.cloneNode(true);
-    faqTemplate.querySelector('h5.faq_question').innerText = faq.q;
-    faqTemplate.querySelector('p.faq_answer').innerText = faq.a;
-    faqContainer.append(faqTemplate);
-})
-
-
-
-
-
-document.querySelectorAll('.section_heading').forEach(h2 => {
-    h2.setAttribute('data-aos', "fade-right")
-})
-document.querySelectorAll('.section_desc').forEach(p => {
-    p.setAttribute('data-aos', 'fade-right');
-    p.setAttribute('data-aos-delay', '50');
-})
+// faqs.forEach(faq => {
+//     var faqTemplate = faqContainer.querySelector('.faq_template').content.cloneNode(true);
+//     faqTemplate.querySelector('h5.faq_question').innerText = faq.q;
+//     faqTemplate.querySelector('p.faq_answer').innerText = faq.a;
+//     faqContainer.append(faqTemplate);
+// })
 
 
 
 
 
-// FAQ Section
+// document.querySelectorAll('.section_heading').forEach(h2 => {
+//     h2.setAttribute('data-aos', "fade-right")
+// })
+// document.querySelectorAll('.section_desc').forEach(p => {
+//     p.setAttribute('data-aos', 'fade-right');
+//     p.setAttribute('data-aos-delay', '50');
+// })
 
-var faqArray = document.querySelectorAll('.faq_header');
 
-faqArray.forEach(faq => {
-    faq.addEventListener('click', e => {
-        var plus1 = faq.querySelector('.faq_plus1');
-        // if (e.target !== faq) {
-        //     faq.nextElementSibling.classList.remove('faq_clicked')
-        //     plus1.classList.remove('faq_clicked')
-        // }
-        if (!faq.nextElementSibling.classList.contains('faq_clicked')) {
-            faq.nextElementSibling.classList.add('faq_clicked')
-            plus1.classList.add('faq_clicked')
-        } else {
-            faq.nextElementSibling.classList.remove('faq_clicked')
-            plus1.classList.remove('faq_clicked')
-        }
-    })
-})
+
+
+
+// // FAQ Section
+
+// var faqArray = document.querySelectorAll('.faq_header');
+
+// faqArray.forEach(faq => {
+//     faq.addEventListener('click', e => {
+//         var plus1 = faq.querySelector('.faq_plus1');
+//         // if (e.target !== faq) {
+//         //     faq.nextElementSibling.classList.remove('faq_clicked')
+//         //     plus1.classList.remove('faq_clicked')
+//         // }
+//         if (!faq.nextElementSibling.classList.contains('faq_clicked')) {
+//             faq.nextElementSibling.classList.add('faq_clicked')
+//             plus1.classList.add('faq_clicked')
+//         } else {
+//             faq.nextElementSibling.classList.remove('faq_clicked')
+//             plus1.classList.remove('faq_clicked')
+//         }
+//     })
+// })
