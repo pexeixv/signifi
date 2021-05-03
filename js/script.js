@@ -75,6 +75,21 @@ document.querySelectorAll('.section_desc').forEach(p => {
 })
 
 
+// Features section
+import { features } from '../db/features.js';
+var featuresGrid = document.querySelector('.features_grid');
+features.forEach(feature => {
+    var featureTemplate = document.querySelector('.feature_template').content.cloneNode(true);
+    featureTemplate.querySelector('.feature_title').innerText = feature.name;
+    featureTemplate.querySelector('.feature_desc').innerText = feature.desc;
+    let card = featureTemplate.querySelector('.feature');
+    feature.iconClasses.forEach(iconClass => {
+        card.querySelector('.feature_icon').classList.add(iconClass);
+    })
+    card.setAttribute('data-aos', feature.data_aos);
+    card.setAttribute('data-aos-delay', feature.data_aos_delay);
+    featuresGrid.append(featureTemplate);
+})
 
 
 
@@ -112,7 +127,7 @@ pricingPlans.forEach(plan => {
     var priceTemplate = document.querySelector('.pricing_template').content.cloneNode(true);
     priceTemplate.querySelector('.price_title').innerText = plan.name;
     priceTemplate.querySelector('.price_desc').innerText = plan.desc;
-    var card = priceTemplate.querySelector('.price');
+    let card = priceTemplate.querySelector('.price');
     if (plan.emphasized)
         card.classList.add('price-emp');
     card.setAttribute('data-aos', plan.data_aos);
