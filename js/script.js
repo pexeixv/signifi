@@ -150,6 +150,8 @@ pricingPlans.forEach(plan => {
     pricingGrid.append(priceTemplate)
 })
 
+priceCards = document.querySelectorAll('.pricing_grid .price');
+featuresCards = document.querySelectorAll('.features_grid .feature');
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 if (vw <= 1200) {
