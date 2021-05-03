@@ -677,6 +677,10 @@ header.header_scroll {
   margin: 0 0 12px 5px;
 }
 
+.price_features_grid {
+  width: 100%;
+}
+
 .price-emp {
   z-index: 2;
   outline: unset;
