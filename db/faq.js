@@ -1,34 +1,23 @@
 export var faqs = [
     {
         'id': 1,
-        'q': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore?',
-        'a': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        'q': 'Does my plan auto-renew?',
+        'a': 'No. Plans do not renew annually. If your plan needs renewal we will let you know a month in advance.'
     },
     {
         'id': 2,
-        'q': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-        'a': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.'
+        'q': 'Can I cancel my plan?',
+        'a': 'Yes. Within 48 hours of issue you can cancel your plan. We will provide you with a full refund.'
     },
     {
         'id': 3,
-        'q': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?',
-        'a': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        'q': 'Do you provide email accounts?',
+        'a': 'No, we do not provide any associated email accounts. In case you have a requirement for more than 10 email accounts or large volume email storage, contact us for a quote.'
     },
     {
         'id': 4,
-        'q': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore?',
-        'a': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        'q': 'Does your subscription price increase after the first renewal?',
+        'a': 'We do not follow that policy. Our price remains constant unless there is a major change in currency value. But generally it remains steady.'
     },
-    {
-        'id': 5,
-        'q': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-        'a': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.'
-    },
-    {
-        'id': 6,
-        'q': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod?',
-        'a': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-    },
-
 
 ]

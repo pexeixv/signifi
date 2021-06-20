@@ -12,6 +12,10 @@
     display: grid
     grid-template-columns: repeat(3,1fr)
 
+.pricing_btn
+    width: max-content
+    margin: 2em 0 0
+
 .price
     background: darken($pri,5)
     z-index: 1
@@ -20,6 +24,8 @@
     display: flex
     flex-direction: column
     align-items: center
+    justify-content: space-between
+    gap: 2em
 
 .price_title
     text-transform: uppercase
@@ -44,7 +50,7 @@
 
 .price_footer
     gap: 0.5em
-    margin-top: 3em
+    margin-top: 0
     display: flex
     align-items: center
     justify-content: space-between
@@ -60,19 +66,26 @@
     font-weight: 700
     color: $light
 
-.price_cost::before
+.price_rate
+    position: relative
+
+.price_rate::before
     content: '₹'
     font-size: 0.7em
     align-self: flex-start
     margin-top: 5px
     margin-right: 5px
 
-.price_cost::after
+.price_rate::after
     content: '/month'
     text-transform: uppercase
     font-size: 0.3em
     align-self: flex-end
-    margin: 0 0 12px 5px
+    // margin: 0 0 12px 5px
+    position: absolute
+    top: 80%
+    right: 0
+    // transform: translateX(-100%)
 
 .price_features_grid
     width: 100%
@@ -94,6 +107,12 @@
     .price_cost
         color: $dark
 
+.price_feature_template_single .price_feature
+    width: 100%
+
+.price_footer
+    gap: 1.5em
+
 @media screen and ( max-width: 1200px )
     .price
         width: 90%
@@ -105,3 +124,10 @@
     .price-emp
         margin: 0
         padding: 2em
+    .pricing_btn
+        margin-right: auto
+        margin-left: auto
+
+@media screen and ( max-width: 490px )
+    .price_footer
+        flex-direction: column

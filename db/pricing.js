@@ -7,96 +7,78 @@ export var pricingPlans = [
         'emphasized': false,
         'name': 'Basic',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
-        'features': [
-            {
-                'featureName': 'Domains',
-                'featureValue': '1'
-            },
-            {
-                'featureName': 'Disk Space',
-                'featureValue': '500MB'
-            },
-            {
-                'featureName': 'Email Accounts',
-                'featureValue': '10'
-            },
-            {
-                'featureName': 'Databases',
-                'featureValue': '5'
-            },
-            {
-                'featureName': 'Bandwidth',
-                'featureValue': '10GB'
-            },
+        'feature': [
+            'Custom domain name (only one)',
+            'Free SSL',
+            'Control Panel access',
+            'SFTP access',
+            'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
+            '24x7 Email support',
+            '5GB SSD'
         ],
-        'price': 399,
-        'link': '#',
+        'price': 150,
+        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-right',
         'data_aos_delay': '400'
     },
     {
         'id': 2,
         'emphasized': true,
-        'name': 'Basic',
+        'name': 'Reseller',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
-        'features': [
-            {
-                'featureName': 'Domains',
-                'featureValue': '1'
-            },
-            {
-                'featureName': 'Disk Space',
-                'featureValue': '500MB'
-            },
-            {
-                'featureName': 'Email Accounts',
-                'featureValue': '10'
-            },
-            {
-                'featureName': 'Databases',
-                'featureValue': '5'
-            },
-            {
-                'featureName': 'Bandwidth',
-                'featureValue': '10GB'
-            },
+        'feature': [
+            'Unlimited domain support',
+            'Free SSL for every domain',
+            'Control Panel Reseller access',
+            'SFTP/SSH access',
+            'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
+            '24x7 Email support',
+            '9 to 5 weekdays telephone support',
+            '150GB SSD'
         ],
-        'price': 399,
-        'link': '#',
+        'price': 4000,
+        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-up',
         'data_aos_delay': '200'
     },
     {
         'id': 3,
         'emphasized': false,
-        'name': 'Basic',
+        'name': 'Enterprise',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
-        'features': [
-            {
-                'featureName': 'Domains',
-                'featureValue': '1'
-            },
-            {
-                'featureName': 'Disk Space',
-                'featureValue': '500MB'
-            },
-            {
-                'featureName': 'Email Accounts',
-                'featureValue': '10'
-            },
-            {
-                'featureName': 'Databases',
-                'featureValue': '5'
-            },
-            {
-                'featureName': 'Bandwidth',
-                'featureValue': '10GB'
-            },
+        'feature': [
+            'Unlimited domain support',
+            'Free SSL for every domain',
+            'Control Panel Admin access',
+            'SFTP/SSH access',
+            'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
+            '24x7 Email support',
+            '9 to 5 weekdays telephone support',
+            '300GB SSD'
         ],
-        'price': 399,
-        'link': '#',
+        'price': 16000,
+        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-left',
         'data_aos_delay': '400'
     },
 
+]
+
+
+export var freePlan = [
+    {
+        'id': 0,
+        'emphasized': true,
+        'name': 'Free trial',
+        'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
+        'feature': [
+            'Subdomain of *.signifi.org',
+            'Free SSL',
+            'SFTP access',
+            '1 database provided',
+            'No support'
+        ],
+        'price': 0,
+        'link': '#',
+    }
 ]

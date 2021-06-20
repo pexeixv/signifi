@@ -1,29 +1,29 @@
 export var features = [
     {
-        'name': 'Feature number one',
+        'name': 'Enhanced CPU & Memory',
         'iconClasses': [
             'fas',
-            'fa-leaf'
+            'fa-microchip'
         ],
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
         'data_aos': 'fade-up',
         'data_aos_delay': '300'
     },
     {
-        'name': 'Feature number one',
+        'name': 'Built with PHP',
         'iconClasses': [
-            'fab',
-            'fa-envira'
+            'fas',
+            'fa-code'
         ],
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
         'data_aos': 'fade-up',
         'data_aos_delay': '600'
     },
     {
-        'name': 'Feature number one',
+        'name': 'SSD Storage',
         'iconClasses': [
-            'fab',
-            'fa-canadian-maple-leaf'
+            'fas',
+            'fa-hdd'
         ],
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
         'data_aos': 'fade-up',

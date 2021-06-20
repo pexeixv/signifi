@@ -7,7 +7,7 @@
 .contact_title
     color: $light
 
-.contact_name, .contact_email, .contact_message
+input, textarea
     background: $lightPri
     color: $light
 
@@ -22,14 +22,10 @@
     cursor: pointer
 
 .contact_form
+    gap: 1em
     width: 90%
     max-width: 800px
     margin: 4em auto 0
-
-.contact_message
-    display: flex
-    margin: 0.5em 2em
-    height: 150px
 
 .contact_name, .contact_email
     // width: 48%
@@ -67,9 +63,12 @@ textarea:-ms-input-placeholder
     *
         width: 100%
 
-.contact_message
-    margin: 1em 0
+textarea
+    display: flex
+    height: 150px
     width: 100%
+.contact_address
+    height: 100px
 
 @media screen and ( max-width: 1000px )
     .contact_row
