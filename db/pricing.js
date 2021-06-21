@@ -19,7 +19,8 @@ export var pricingPlans = [
         'price': 150,
         'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-right',
-        'data_aos_delay': '400'
+        'data_aos_delay': '400',
+        'billing': 'Billed monthly'
     },
     {
         'id': 2,
@@ -33,13 +34,14 @@ export var pricingPlans = [
             'SFTP/SSH access',
             'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
             '24x7 Email support',
-            '9 to 5 weekdays telephone support',
+            '9am to 5pm weekdays telephone support',
             '150GB SSD'
         ],
         'price': 4000,
         'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-up',
-        'data_aos_delay': '200'
+        'data_aos_delay': '200',
+        'billing': 'Billed annually'
     },
     {
         'id': 3,
@@ -53,13 +55,14 @@ export var pricingPlans = [
             'SFTP/SSH access',
             'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
             '24x7 Email support',
-            '9 to 5 weekdays telephone support',
+            '9am to 5pm weekdays telephone support',
             '300GB SSD'
         ],
         'price': 16000,
         'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-left',
-        'data_aos_delay': '400'
+        'data_aos_delay': '400',
+        'billing': 'Billed annually'
     },
 
 ]

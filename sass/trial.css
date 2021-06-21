@@ -296,6 +296,7 @@ header.header_scroll {
 }
 
 .price {
+  width: 100%;
   background: #2e315f;
   z-index: 1;
   padding: 2em;
@@ -313,7 +314,7 @@ header.header_scroll {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 2em;
+  gap: 1em;
 }
 
 .price_title {

@@ -163,6 +163,7 @@ pricingPlans.forEach(plan => {
 
     priceTemplate.querySelector('.price_footer').id = `razorpayButtonDestination${plan.id}`
     priceTemplate.querySelector('.price_rate').innerText = plan.price;
+    priceTemplate.querySelector('.price_billing').innerText = plan.billing;
     pricingGrid.append(priceTemplate)
 })
 
