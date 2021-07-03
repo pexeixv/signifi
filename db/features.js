@@ -5,7 +5,7 @@ export var features = [
             'fas',
             'fa-microchip'
         ],
-        'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
+        'desc': 'Best in class hardware ensures that your website gets the most from the hosting plan.',
         'data_aos': 'fade-up',
         'data_aos_delay': '300'
     },
@@ -15,7 +15,7 @@ export var features = [
             'fas',
             'fa-code'
         ],
-        'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
+        'desc': 'Latest stable versions of PHP built with speed and additional caching.',
         'data_aos': 'fade-up',
         'data_aos_delay': '600'
     },
@@ -25,7 +25,7 @@ export var features = [
             'fas',
             'fa-hdd'
         ],
-        'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
+        'desc': 'No more slow speed hard disk drives. SSD storage provided on all hosting plans.',
         'data_aos': 'fade-up',
         'data_aos_delay': '900'
     },

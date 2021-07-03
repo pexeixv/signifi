@@ -94,6 +94,7 @@ h2.section_heading {
 }
 
 p.section_desc {
+  font-size: 0.9rem;
   padding-top: 1em;
   width: 80ch;
   max-width: 90%;
@@ -314,7 +315,7 @@ header.header_scroll {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1em;
+  gap: 1.2em;
 }
 
 .price_title {
@@ -325,7 +326,7 @@ header.header_scroll {
 
 .price_desc {
   margin: 2em 0 3em;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .price_divider {
@@ -346,6 +347,7 @@ header.header_scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 90%;
+  font-size: 0.85rem;
 }
 
 .price_footer {
@@ -418,6 +420,10 @@ header.header_scroll {
   margin-bottom: -5px;
   -webkit-box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.3);
           box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.3);
+}
+
+.price-emp .price_featurevalue {
+  color: black;
 }
 
 .price-emp .price_title {

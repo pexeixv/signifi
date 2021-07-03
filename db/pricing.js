@@ -1,5 +1,5 @@
-// Have only 3 cards and emphasise the middle card.
-// Have same number of features for each card, preferabily 5.
+// Have only 3 cards and emphasize the middle card.
+// Have same number of features for each card, preferably 5.
 
 export var pricingPlans = [
     {
@@ -20,7 +20,7 @@ export var pricingPlans = [
         'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-right',
         'data_aos_delay': '400',
-        'billing': 'Billed monthly'
+        'billing': 'Billed annually'
     },
     {
         'id': 2,
@@ -41,7 +41,7 @@ export var pricingPlans = [
         'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-up',
         'data_aos_delay': '200',
-        'billing': 'Billed annually'
+        'billing': 'Billed monthly'
     },
     {
         'id': 3,
@@ -56,13 +56,14 @@ export var pricingPlans = [
             'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
             '24x7 Email support',
             '9am to 5pm weekdays telephone support',
+            '20 hour developer support per month',
             '300GB SSD'
         ],
         'price': 16000,
         'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
         'data_aos': 'fade-left',
         'data_aos_delay': '400',
-        'billing': 'Billed annually'
+        'billing': 'Billed monthly'
     },
 
 ]
