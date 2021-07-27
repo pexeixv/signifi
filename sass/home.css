@@ -171,11 +171,6 @@ p.section_desc {
   height: 55px;
 }
 
-.header_image:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .header_title {
   color: white;
   font-weight: 700;
