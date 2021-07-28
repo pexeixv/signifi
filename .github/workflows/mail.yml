@@ -17,6 +17,3 @@ jobs:
         server: wp.signifi.org
         username: signifi
         password: ${{ secrets.SIGNIFI_SFTP_PASSWORD }}
-        exclude:
-          - documentation.md
-          - doc.docx
