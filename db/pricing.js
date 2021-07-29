@@ -8,7 +8,7 @@ export var pricingPlans = [
         'name': 'Basic',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
         'feature': [
-            'Custom domain name (only one)',
+            '1 Domain',
             'Free SSL',
             'Control Panel access',
             'SFTP access',
@@ -25,64 +25,43 @@ export var pricingPlans = [
     {
         'id': 2,
         'emphasized': true,
-        'name': 'Reseller',
+        'name': 'Developer',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
         'feature': [
-            'Unlimited domain support',
-            'Free SSL for every domain',
-            'Control Panel Reseller access',
-            'SFTP/SSH access',
+            '5 Domains at ₹125 per domain per month',
+            'Free SSL',
+            'Control Panel access',
+            'SFTP access',
             'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
             '24x7 Email support',
-            '9am to 5pm weekdays telephone support',
-            '150GB SSD'
+            '25GB SSD (unified)'
         ],
-        'price': 4000,
-        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
+        'price': 625,
+        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HegVbLm1XwSqQE" async> </script> </form>`,
         'data_aos': 'fade-up',
         'data_aos_delay': '200',
-        'billing': 'Billed monthly'
+        'billing': 'Billed annually'
     },
     {
         'id': 3,
         'emphasized': false,
-        'name': 'Enterprise',
+        'name': 'Advanced',
         'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
         'feature': [
-            'Unlimited domain support',
-            'Free SSL for every domain',
-            'Control Panel Admin access',
-            'SFTP/SSH access',
+            '10 Domains at ₹100 per domain per month',
+            'Free SSL',
+            'Control Panel access',
+            'SFTP access',
             'One Click WordPress, Joomla, Prestashop, Git, Magento installer',
             '24x7 Email support',
-            '9am to 5pm weekdays telephone support',
-            '20 hour developer support per month',
-            '300GB SSD'
+            '50GB SSD (unified)'
         ],
-        'price': 16000,
-        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HOxmxPncdoNfkY" async> </script> </form>`,
+        'price': 1000,
+        'link': `<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HegXHwocYjJAxB" async> </script> </form>`,
         'data_aos': 'fade-left',
         'data_aos_delay': '400',
-        'billing': 'Billed monthly'
+        'billing': 'Billed annually'
     },
 
 ]
 
-
-export var freePlan = [
-    {
-        'id': 0,
-        'emphasized': true,
-        'name': 'Free trial',
-        'desc': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis',
-        'feature': [
-            'Subdomain of *.signifi.org',
-            'Free SSL',
-            'SFTP access',
-            '1 database provided',
-            'No support'
-        ],
-        'price': 0,
-        'link': '#',
-    }
-]

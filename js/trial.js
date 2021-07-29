@@ -1,7 +1,7 @@
 var priceCards = document.querySelectorAll('.pricing_grid .price');
 var featuresCards = document.querySelectorAll('.features_grid .feature');
 
-import { freePlan } from '../db/pricing.js';
+import { freePlan } from '../db/freePlan.js';
 var pricingGrid = document.querySelector('.pricing_grid');
 freePlan.forEach(plan => {
     var priceTemplate = document.querySelector('.pricing_template').content.cloneNode(true);

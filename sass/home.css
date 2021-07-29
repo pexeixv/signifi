@@ -568,11 +568,17 @@ header.header_scroll {
 .pricing {
   background: #363a70;
   color: #b2b0ff;
-  padding-bottom: 8em;
+  padding-bottom: 3em;
 }
 
 .pricing h2 {
   color: white;
+}
+
+.pricing_subtitle {
+  margin-top: 2em;
+  text-align: center;
+  font-weight: 400;
 }
 
 .pricing_grid {
@@ -582,6 +588,32 @@ header.header_scroll {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing_grid2 {
+  -ms-grid-columns: 1fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 2fr 1fr;
+  margin-top: 5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .pricing_grid2 .price:nth-child(1) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .pricing_grid2 .price:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pricing_grid2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .pricing_btn {

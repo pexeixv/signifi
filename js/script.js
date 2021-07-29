@@ -167,6 +167,64 @@ pricingPlans.forEach(plan => {
     pricingGrid.append(priceTemplate)
 })
 
+
+
+
+
+
+
+import { pricingPlans2 } from '../db/pricing2.js';
+pricingGrid = document.querySelector('.pricing_grid2');
+pricingPlans2.forEach(plan => {
+    var priceTemplate = document.querySelector('.pricing_template').content.cloneNode(true);
+    priceTemplate.querySelector('.price_title').innerText = plan.name;
+    // priceTemplate.querySelector('.price_desc').innerText = plan.desc;
+    let card = priceTemplate.querySelector('.price');
+    if (plan.emphasized)
+        card.classList.add('price-emp');
+    card.setAttribute('data-aos', plan.data_aos);
+    card.setAttribute('data-aos-delay', plan.data_aos_delay);
+    var i = 0;
+    if (plan.features)
+        plan.features.forEach(feature => {
+            if (i) {
+                var divider = document.createElement('div');
+                divider.classList.add('price_divider')
+                priceTemplate.querySelector('.price_features_grid').append(divider);
+            }
+            i++;
+            var priceFeatureTemplate = priceTemplate.querySelector('.price_feature_template').content.cloneNode(true)
+            priceFeatureTemplate.querySelector('.price_feature').innerText = feature.featureName;
+            priceFeatureTemplate.querySelector('.price_value').innerText = feature.featureValue;
+            priceTemplate.querySelector('.price_features_grid').append(priceFeatureTemplate);
+        })
+    i = 0;
+    if (plan.feature)
+        plan.feature.forEach(feature => {
+
+            if (i) {
+                var divider = document.createElement('div');
+                divider.classList.add('price_divider')
+                priceTemplate.querySelector('.price_features_grid').append(divider);
+            }
+            i++;
+            var priceFeatureTemplate = priceTemplate.querySelector('.price_feature_template_single').content.cloneNode(true)
+            priceFeatureTemplate.querySelector('.price_feature').innerText = feature;
+            priceTemplate.querySelector('.price_features_grid').append(priceFeatureTemplate);
+        })
+
+    priceTemplate.querySelector('.price_footer').id = `razorpayButtonDestination${plan.id}`
+    priceTemplate.querySelector('.price_rate').innerText = plan.price;
+    priceTemplate.querySelector('.price_billing').innerText = plan.billing;
+    pricingGrid.append(priceTemplate)
+})
+
+
+
+
+
+
+
 priceCards = document.querySelectorAll('.pricing_grid .price');
 featuresCards = document.querySelectorAll('.features_grid .feature');
 
@@ -194,5 +252,5 @@ var moveRazorpayButtons = (source, destination) => {
 }
 
 
-for (let i = 0; i < 3; i++)
+for (let i = 0; i < 5; i++)
     moveRazorpayButtons(`razorpay${i + 1}`, `razorpayButtonDestination${i + 1}`)
