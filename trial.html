@@ -19,6 +19,17 @@
     <meta property="og:image" content="https://www.signifi.org/img/logo-preview.jpg">
     <meta property="og:type" content="website">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202508894-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-202508894-1');
+    </script>
+
 </head>
 
 <body>
@@ -70,8 +81,7 @@
                     <textarea type="text" class="contact_message" placeholder="Message *" required
                         name="Message"></textarea>
 
-                    <input type="hidden" name="_next" value="//wp.signifi.org/">
-                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="//signifi.org/">
                     <input type="hidden" name="_subject" value="New trial request at Signifi">
                     <input type="hidden" name="_autoresponse"
                         value="Your trial request was successfully sent to Signifi!">
