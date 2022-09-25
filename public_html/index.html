@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signifi</title>
+    <link rel="shortcut icon" href="/img/fav.png" type="image/x-icon">
+    <meta property="og:title" content="Signifi">
+    <meta property="og:url" content="https://www.signifi.org">
+    <meta property="og:description" content="Wordpress hosting simplified! Ultra-fast websites, transparent pricing and amazing suppport. Hosting does not
+                get better than this.">
+    <meta name="description" content="Wordpress hosting simplified! Ultra-fast websites, transparent pricing and amazing suppport. Hosting does not
+                get better than this.">
+    <meta property="og:image" content="https://www.signifi.org/img/logo-preview.jpg">
+    <meta property="og:type" content="website">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-202508894-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-202508894-1');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/tailwind.css">
+</head>
+
+<body class="bg-sec text-pri">
+    <!--Designed and Developed by Gavin Pereira: gavinpereira.in -->
+    
+
+
+
+<header class="bg-pri text-sec fixed top-0 w-full z-30 shadow-lg">
+    <div class="container mx-auto px-5 flex justify-between py-5 items-center relative">
+        <a href="/">
+            <img src="/img/logo-white.png" alt="Signifi" class="h-10 hover:scale-105 transition-all scale-100">
+        </a>
+        <nav class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-fit items-center gap-5 text-lg bg-pri p-8 md:p-0 shadow-2xl lg:shadow-none rounded-b-2xl"
+            id="nav">
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors" href="#">Home</a>
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors"
+                href="#features">Features</a>
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors"
+                href="#pricing">Pricing</a>
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors"
+                href="#services">Services</a>
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors"
+                href="#technical">Technical</a>
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors" href="#faq">FAQ</a>
+            <a onclick="collapseNav()" class="text-white hover:text-white/60 transition-colors"
+                href="#contact">Contact</a>
+        </nav>
+        <button onclick="toggleMenu()" class="p-2 md:hidden flex items-center justify-center h-3 w-3"><i
+                class="fas fa-bars" id="menuIcon"></i></button>
+    </div>
+</header>
+
+
+<section class="bg-pri text-white pb-5 pt-20">
+    <main class="container mx-auto px-5 flex flex-col lg:flex-row justify-between py-16 gap-10">
+        <div class="flex-1 flex items-center justify-center lg:order-last">
+            <img src="/img/hero.png" alt="Wordpress Hosting" class="max-h-[30rem]" />
+        </div>
+        <div class="flex-1 flex flex-col justify-center items-center lg:items-start gap-5 text-center lg:text-left">
+            <h1 class="font-black text-3xl md:text-4xl lg:text-6xl max-w-4xl">
+                Wordpress hosting simplified!
+            </h1>
+            <p class="text-ter text-base lg:text-lg max-w-lg">
+                Ultra-fast websites, transparent pricing and amazing support. Hosting does not get better than this.
+            </p>
+            <a href="#features" class="bg-ter text-pri px-5 py-3 font-black text rounded">Explore</a>
+        </div>
+
+
+    </main>
+    <div class="flex justify-center">
+        <div class="bg-white text-black container mx-5 px-5 w-fit p-5 rounded-lg">
+            <h4 class="uppercase tracking-wider font-bold  mb-4 text-center opacity-70">Trusted by</h4>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 w-fit mx-auto">
+                <a href="//opspl.com" target="_blank" title="Online Productivity Services">
+                    <img class="h-10 lg:h-12" src="img/partners/opspl.png" alt="Online Productivity Services"
+                        title="Online Productivity Services">
+                </a>
+                <a href="//demergsystems.com" target="_blank" title="Demerg Systems">
+                    <img class="h-10 lg:h-12" src="img/partners/demerg.png" alt="Demerg Systems" title="Demerg Systems">
+                </a>
+                <a href="//rubiq.in/" target="_blank" title="Rubiq">
+                    <img class="h-10 lg:h-12" src="img/partners/rubiq.svg" alt="Rubiq" title="Rubiq">
+                </a>
+                <a href="//siliconcomp.com" target="_blank" title="Silicon Computers">
+                    <img class="h-10 lg:h-12" src="img/partners/silicon.png" alt="Silicon Computers"
+                        title="Silicon Computers">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex justify-center px-5 py-5 mx-auto">
+        <a href="#features" class="p-3"><i class="fas fa-chevron-down animate-bounce"></i></a>
+    </div>
+
+</section>
+
+
+
+<section class="text-pri bg-sec" id="features">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20">
+        <h2 class="text-4xl font-black">
+            Why choose us?
+        </h2>
+        <p class="text-lg max-w-5xl mt-5">
+            Host your WordPress project on infrastructure designed for faster WordPress. From enhanced CPU and memory to
+            fast SSD
+            data response times, your WordPress site benefits from faster loading times. This leads to an improved user
+            experience
+            and a better Google ranking.
+        </p>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-items-center mt-16 lg:mt-24">
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class=" fas fa-microchip text-6xl"></i>
+                <h3 class="text-2xl font-bold">
+                    Enhanced CPU &amp; Memory
+                </h3>
+                <p>
+                    Best in class hardware ensures that your website gets the most from the hosting plan.
+                </p>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class=" fas fa-code text-6xl"></i>
+                <h3 class="text-2xl font-bold">
+                    Built with PHP
+                </h3>
+                <p>
+                    Latest stable versions of PHP built with speed and additional caching.
+                </p>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class=" fas fa-hdd text-6xl"></i>
+                <h3 class="text-2xl font-bold">
+                    SSD Storage
+                </h3>
+                <p>
+                    No more slow speed hard disk drives. SSD storage provided on all hosting plans.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="text-pri bg-sec" id="pricing">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20 items-start">
+        <h2 class="text-4xl font-black">
+            Flexible Hosting Prices
+        </h2>
+        <p class="text-lg max-w-5xl mt-5">
+            We have plans for every type of user. In case you don't find your preferred plan here, contact us for a
+            custom plan.
+        </p>
+        <a href="/trial" class="bg-ter text-pri px-5 py-3 font-black text-lg rounded mt-5">Request a free
+            trial</a>
+        <div
+            class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 gap-10 justify-items-center mt-16 lg:mt-24 mx-auto w-full">
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Basic
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc pl-5">
+                    
+                    <li>1 Domain</li>
+                    
+                    <li>Free SSL</li>
+                    
+                    <li>Control Panel access</li>
+                    
+                    <li>SFTP access</li>
+                    
+                    <li>One Click WordPress, Joomla, Prestashop, Git, Magento installer</li>
+                    
+                    <li>24x7 Email support</li>
+                    
+                    <li>5GB SSD</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">150</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HOxmxPncdoNfkY' async> </script> </form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed annually
+                        </span>
+                        <span class="italic text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Developer
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc pl-5">
+                    
+                    <li>5 Domains at ₹125 per domain per month</li>
+                    
+                    <li>Free SSL</li>
+                    
+                    <li>Control Panel access</li>
+                    
+                    <li>SFTP access</li>
+                    
+                    <li>One Click WordPress, Joomla, Prestashop, Git, Magento installer</li>
+                    
+                    <li>24x7 Email support</li>
+                    
+                    <li>25GB SSD (unified)</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">625</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HegVbLm1XwSqQE' async> </script> </form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed annually
+                        </span>
+                        <span class="italic text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Advanced
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc pl-5">
+                    
+                    <li>10 Domains at ₹100 per domain per month</li>
+                    
+                    <li>Free SSL</li>
+                    
+                    <li>Control Panel access</li>
+                    
+                    <li>SFTP access</li>
+                    
+                    <li>One Click WordPress, Joomla, Prestashop, Git, Magento installer</li>
+                    
+                    <li>24x7 Email support</li>
+                    
+                    <li>50GB SSD (unified)</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">1000</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HegXHwocYjJAxB' async> </script> </form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed annually
+                        </span>
+                        <span class="italic text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Reseller
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc pl-5">
+                    
+                    <li>Unlimited domain support</li>
+                    
+                    <li>Free SSL for every domain</li>
+                    
+                    <li>Control Panel Reseller access</li>
+                    
+                    <li>SFTP/SSH access</li>
+                    
+                    <li>One Click WordPress, Joomla, Prestashop, Git, Magento installer</li>
+                    
+                    <li>24x7 Email support</li>
+                    
+                    <li>9am to 5pm weekdays telephone support</li>
+                    
+                    <li>150GB SSD</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">4000</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HOxmxPncdoNfkY' async> </script> </form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed monthly
+                        </span>
+                        <span class="italic text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Enterprise
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc pl-5">
+                    
+                    <li>Unlimited domain support</li>
+                    
+                    <li>Free SSL for every domain</li>
+                    
+                    <li>Control Panel Admin access</li>
+                    
+                    <li>SFTP/SSH access</li>
+                    
+                    <li>One Click WordPress, Joomla, Prestashop, Git, Magento installer</li>
+                    
+                    <li>24x7 Email support</li>
+                    
+                    <li>9am to 5pm weekdays telephone support</li>
+                    
+                    <li>20 hour developer support per month</li>
+                    
+                    <li>300GB SSD</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">16000</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HOxmxPncdoNfkY' async> </script> </form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed monthly
+                        </span>
+                        <span class="italic text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="text-pri bg-sec" id="pricing">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20 items-start">
+        <h2 class="text-4xl font-black">
+            Email Plans
+        </h2>
+        <div
+            class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 gap-10 justify-items-center mt-16 lg:mt-24 mx-auto w-full">
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Plan A
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc">
+                    
+                    <li>5GB Mailbox</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">50</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLO1l6zVlqJJ6' async> </script></form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed annually
+                        </span>
+                        <span class="italic  text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5 rounded bg-white text-center max-w-lg w-full">
+                <i class="text-6xl"></i>
+                <h3 class="text-2xl font-bold uppercase">
+                    Plan B
+                </h3>
+                <ul class="flex flex-col items-start text-left list-disc">
+                    
+                    <li>50GB Mailbox</li>
+                    
+                </ul>
+                <div class="flex-1 flex flex-col justify-end">
+                    <div>
+                        <span class="text-lg relative bottom-1">&#8377;</span>
+                        <span class="text-4xl font-bold">200</span>
+                        <span class="text-lg relative bottom-1">/month</span>
+                    </div>
+                    <div class="mt-3">
+                        <form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLPhcU00LRRTt' async> </script> </form>
+                    </div>
+                    <div class="flex flex-col items-center mt-3">
+                        <span class="text-sm">
+                            Billed annually
+                        </span>
+                        <span class="italic  text-xs">
+                            +18% GST
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="flex flex-col items-center gap-5 shadow-lg p-5  rounded bg-white text-center max-w-lg w-full">
+                <h3 class="text-2xl font-bold ">
+                    Included in your mailbox
+                </h3>
+                <div class="flex flex-col items-start">
+                    <li class="text-left list-disc">Mail forwarding</li>
+                    <li class="text-left list-disc">Vacation autoresponder</li>
+                    <li class="text-left list-disc">IMAP, POP and Webmail</li>
+                    <li class="text-left list-disc">Private, ad-free email</li>
+                    <li class="text-left list-disc">Built-in anti-spam/virus</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="text-pri bg-sec" id="services">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20 items-start">
+
+
+        <h2 class="text-4xl font-black">
+            Services
+        </h2>
+        <h3 class="text-2xl font-bold mt-5">
+            Website Performance Tunings
+        </h3>
+
+        <p class="text-lg max-w-5xl mt-2">
+            We specialise in high performance tuning of WordPress websites, and that is our standout aspect. Our
+            expertise and customised planning ensures that every WordPress website we work with, ends up top ranked.
+        </p>
+
+
+        <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-3 mt-16 lg:mt-24 justify-center mx-auto">
+
+
+            <img src="/img/performance/1.png" class="max-w-md w-full lg:w-[20%]">
+            <i class="fa-solid fa-caret-down fa-2x lg:-rotate-90"></i>
+            <img src="/img/performance/2.png" class="max-w-md w-full lg:w-[20%]">
+            <i class="fa-solid fa-caret-down fa-2x lg:-rotate-90"></i>
+            <img src="/img/performance/3.png" class="max-w-md w-full lg:w-[20%]">
+            <i class="fa-solid fa-caret-down fa-2x lg:-rotate-90"></i>
+            <img src="/img/performance/4.png" class="max-w-md w-full lg:w-[20%]">
+
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<section class="text-pri bg-sec" id="technical">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20 items-start">
+
+
+        <h2 class="text-4xl font-black">
+            Technical
+        </h2>
+
+        <p class="text-lg max-w-5xl mt-5">
+            We compared web server response times when requesting small static files. Comparing small files is a
+            standard practice for benchmarking, as this allows you to evaluate server performance without network
+            saturation becoming an issue. In our testing, LiteSpeed outperformed nginx and Apache by as much as 6x and
+            29x, respectively.
+        </p>
+
+        <img src="./img/small-static-file.png" alt="Small Static File" class="mx-auto mt-16 lg:mt-24 ">
+
+    </div>
+</section>
+
+
+
+
+
+<section class="text-sec bg-pri" id="faq">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20 items-start">
+        <h2 class="text-4xl font-black">
+            Frequently Asked Questions
+
+        </h2>
+
+        <p class="text-lg max-w-5xl mt-5">
+            Our customers have asked us these questions most frequently
+        </p>
+
+
+
+        <div class="space-y-4 max-w-xl lg:max-w-2xl w-full mx-auto mt-16 lg:mt-24 bg-white  rounded-lg px-2">
+
+
+            
+
+
+
+
+            <div class="border-b">
+                <button onclick="expandAccordion(this)" type="button" aria-label="Open item" title="Open item"
+                    class="flex items-center justify-between w-full p-4 focus:outline-none">
+                    <p class="text-lg font-medium text-pri text-left">Does my plan auto-renew?</p>
+                    <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform ">
+                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                    </svg>
+                </button>
+
+                <div class="px-4 overflow-hidden transition-all duration-300 pt-0 h-0">
+                    <p class="text-gray-700 pb-5">No. Plans do not renew annually. If your plan needs renewal we will let you know a month in advance.</p>
+                </div>
+
+            </div>
+
+            
+
+
+
+
+            <div class="border-b">
+                <button onclick="expandAccordion(this)" type="button" aria-label="Open item" title="Open item"
+                    class="flex items-center justify-between w-full p-4 focus:outline-none">
+                    <p class="text-lg font-medium text-pri text-left">Can I cancel my plan?</p>
+                    <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform ">
+                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                    </svg>
+                </button>
+
+                <div class="px-4 overflow-hidden transition-all duration-300 pt-0 h-0">
+                    <p class="text-gray-700 pb-5">Yes. Within 48 hours of issue you can cancel your plan. We will provide you with a full refund.</p>
+                </div>
+
+            </div>
+
+            
+
+
+
+
+            <div class="border-b">
+                <button onclick="expandAccordion(this)" type="button" aria-label="Open item" title="Open item"
+                    class="flex items-center justify-between w-full p-4 focus:outline-none">
+                    <p class="text-lg font-medium text-pri text-left">Do you provide backup solutions?</p>
+                    <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform ">
+                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                    </svg>
+                </button>
+
+                <div class="px-4 overflow-hidden transition-all duration-300 pt-0 h-0">
+                    <p class="text-gray-700 pb-5">We generally configure customer backups to their own cloud storage, e.g. Dropbox, Google Drive, Amazon S3 etc. We also provide multiple backup options with VPN access, multi-user sync and deep archiving. Following the highest encryption standards. Email us for a quote.</p>
+                </div>
+
+            </div>
+
+            
+
+
+
+
+            <div class="border-b">
+                <button onclick="expandAccordion(this)" type="button" aria-label="Open item" title="Open item"
+                    class="flex items-center justify-between w-full p-4 focus:outline-none">
+                    <p class="text-lg font-medium text-pri text-left">Does your subscription price increase after the first renewal?</p>
+                    <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform ">
+                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                    </svg>
+                </button>
+
+                <div class="px-4 overflow-hidden transition-all duration-300 pt-0 h-0">
+                    <p class="text-gray-700 pb-5">We do not follow that policy. Our price remains constant unless there is a major change in currency value. But generally it remains steady.</p>
+                </div>
+
+            </div>
+
+            
+
+
+
+
+            <div class="border-b">
+                <button onclick="expandAccordion(this)" type="button" aria-label="Open item" title="Open item"
+                    class="flex items-center justify-between w-full p-4 focus:outline-none">
+                    <p class="text-lg font-medium text-pri text-left">I need document storage and team sharing too.</p>
+                    <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform ">
+                        <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
+                    </svg>
+                </button>
+
+                <div class="px-4 overflow-hidden transition-all duration-300 pt-0 h-0">
+                    <p class="text-gray-700 pb-5">We have always provided custom solutions which have been reliable and cost-effective. Contact us, we would like to hear more about it.</p>
+                </div>
+
+            </div>
+
+            
+
+
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
+<section class="text-sec bg-pri" id="contact">
+    <div class="container mx-auto px-5 flex flex-col justify-between py-20 items-start">
+        <h2 class="text-4xl font-black">
+            Still have a doubt?
+
+        </h2>
+
+        <p class="text-lg max-w-5xl mt-5">
+            Send us your question and we shall get back to you
+        </p>
+
+        <form action="https://formsubmit.co/bd8137241733d401a6002d8dfafae975" method="POST"
+            class="mt-16 lg:mt-24 flex flex-col w-full  max-w-xl lg:max-w-2xl mx-auto gap-5">
+
+
+
+            <div class="flex flex-col lg:flex-row w-full gap-5">
+                <input type="text" placeholder="Name *" required name="Name"
+                    class="bg-white text-pri placeholder:text-pri/70 w-full p-3 rounded">
+                <input type="email" placeholder="Email ID *" required name="Email"
+                    class="bg-white text-pri placeholder:text-pri/70 w-full p-3 rounded">
+            </div>
+
+
+            <input type="text" placeholder="Company" name="Company"
+                class="bg-white text-pri placeholder:text-pri/70 p-3 rounded">
+
+            <textarea type="text" placeholder="Address" name="Address"
+                class="resize-none h-28 bg-white text-pri placeholder:text-pri/70 p-3 rounded"></textarea>
+            <textarea type="text" placeholder="Message *" required name="Message"
+                class="resize-none h-28 bg-white text-pri placeholder:text-pri/70 p-3 rounded"></textarea>
+
+
+
+
+            <input type="hidden" name="_next" value="//signifi.org/">
+            <input type="hidden" name="_subject" value="New message at Signifi">
+            <input type="hidden" name="_autoresponse"
+                value="Your message  was successfully sent to Signifi! We will get in touch ">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_template" value="table">
+
+
+
+
+            <input type="submit" value="Submit"
+                class="bg-ter text-pri px-5 py-3 font-black text-lg rounded cursor-pointer">
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<section class="text-pri bg-sec" id="contact">
+    <div class="container mx-auto px-5 flex flex-col lg:flex-row justify-center gap-20 py-20 items-start">
+
+        <div class="w-full">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.706733717081!2d73.80770291484983!3d15.392360989302148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDIzJzMyLjUiTiA3M8KwNDgnMzUuNiJF!5e0!3m2!1sen!2sin!4v1624890172669!5m2!1sen!2sin"
+                class="w-full max-w-2xl ml-auto rounded-lg h-96" style="border:0;" allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+
+        <div class="w-full flex flex-col gap-5">
+            <a target="_blank">
+                <i class="fas fa-map-marker-alt address_contact_icon"></i>
+                <span>Stanley Thomas & Associates,<br>
+                    307, Kuber's Narayani, Near PWD Baina,<br>
+                    Vasco da Gama, Goa 403802 India</span>
+            </a>
+            <a href="tel:919923480067" target="_blank" class="relative hover:left-2 transition-all left-0">
+                <i class="fas fa-phone-alt address_contact_icon"></i>
+                <span>+91 9923480067</span>
+            </a>
+            <a href="mailto:support@signifi.org" target="_blank" class="relative hover:left-2 transition-all left-0">
+                <i class="fas fa-at address_contact_icon"></i>
+                <span>support@signifi.org</span>
+            </a>
+            <a>
+                <i class="fas fa-hashtag address_contact_icon"></i>
+                <span>GSTIN: 30AHPPT5373H1Z0</span>
+            </a>
+
+
+
+        </div>
+</section>
+
+
+
+<footer class="bg-white text-pri" id="footer">
+    <div class="container mx-auto px-5 flex justify-between items-center py-3 flex-col md:flex-row gap-3">
+        <span class="text-center md:text-left">
+            &copy; Copyright 2022 - Signifi.<br class="block lg:hidden" /> All Rights Reserved.
+        </span>
+        <a class=" group" href="//gavinpereira.in" target="_blank">
+            <i class="fas fa-code"></i> by <span
+                class="underline decoration-transparent group-hover:decoration-pri transition-all font-bold">Gavin
+                Pereira</span>
+        </a>
+    </div>
+</footer>
+
+
+<script src="/script.js"></script>
+</body>
+
+</html>

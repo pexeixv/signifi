@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "emphasized": false,
+        "name": "Plan A",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+        "feature": [
+            "5GB Mailbox"
+        ],
+        "price": 50,
+        "link": "<form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLO1l6zVlqJJ6' async> </script></form>",
+        "data_aos": "fade-left",
+        "data_aos_delay": "400",
+        "billing": "Billed annually"
+    },
+    {
+        "id": 2,
+        "emphasized": false,
+        "name": "Plan B",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+        "feature": [
+            "50GB Mailbox"
+        ],
+        "price": 200,
+        "link": "<form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLPhcU00LRRTt' async> </script> </form>",
+        "data_aos": "fade-right",
+        "data_aos_delay": "400",
+        "billing": "Billed annually"
+    }
+]
