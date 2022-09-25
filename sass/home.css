@@ -153,7 +153,7 @@ p.section_desc {
   font-weight: 700;
   color: rgb(178, 176, 255);
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .header_link::after {
@@ -633,13 +633,22 @@ header.header_scroll {
     flex-direction: column;
   }
 }
+.services {
+  background: rgb(225, 234, 248);
+  color: rgb(3, 0, 144);
+}
+
+.services_sub {
+  margin-top: 2em;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
 .services_row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   min-height: 200px;
   padding: 60px 0;
-  justify-content: start;
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -648,13 +657,26 @@ header.header_scroll {
   height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
+  gap: 5em;
 }
 
 .service_image {
   position: relative;
-  max-width: 700px;
-  max-width: 500px;
+  max-height: 250px;
   width: 100%;
+}
+
+.service-image-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.service-image-wrapper::before {
+  content: attr(data-stage);
+  opacity: 0.7;
 }
 
 .service_emoji {
@@ -664,19 +686,27 @@ header.header_scroll {
   transform: translate(50%);
 }
 
+.services_text {
+  margin-top: 1em;
+}
+
 @media screen and (max-width: 800px) {
   .service_emoji {
     max-height: 50px;
     transform: translate(50%, 50%);
   }
+  .services_row {
+    grid-template-columns: 1fr;
+    gap: 3em;
+  }
+  .service-image-wrapper::before {
+    display: block;
+    text-align: center;
+  }
 }
 .tech {
   background: rgb(225, 234, 248);
   color: rgb(3, 0, 144);
-}
-
-.tech_title {
-  color: rgb(1, 0, 73);
 }
 
 .tech_image {
@@ -723,12 +753,14 @@ header.header_scroll {
 
 .partners_grid {
   width: 90%;
-  max-width: 600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3em;
+}
+.partners_grid img {
+  height: 60px;
 }
 
 .faq {

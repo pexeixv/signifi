@@ -1,20 +1,36 @@
+.services
+    background: $ter
+    color: $onTer
+
+.services_sub
+    margin-top: 2em
+    font-weight: 700
+    font-size: 1.25rem
+
 .services_row
-    display: flex
-    flex-wrap: wrap
-    align-items: start
+    display: grid
+    grid-template-columns: 1fr 1fr
     min-height: 200px
     padding: 60px 0
-    justify-content: start
     position: relative
     width: fit-content
     height: fit-content
     margin: 0 auto
+    gap: 5em
 
 .service_image
     position: relative
-    max-width: 700px
-    max-width: 500px
+    // max-width: 300px
+    max-height: 250px
     width: 100%
+
+.service-image-wrapper
+    width: fit-content
+    height: fit-content
+
+    &::before
+        content: attr(data-stage)
+        opacity: 0.7
 
 .service_emoji
     position: absolute
@@ -22,8 +38,20 @@
     right: 0
     transform: translate(50%)
 
+.services_text
+    margin-top: 1em
+
 @media screen and (max-width:800px)
 
     .service_emoji
         max-height: 50px
         transform: translate(50%,50%)
+
+    .services_row
+        grid-template-columns: 1fr
+        gap: 3em
+
+    .service-image-wrapper
+        &::before
+            display: block
+            text-align: center

@@ -255,15 +255,3 @@ var moveRazorpayButtons = (source, destination) => {
 
 for (let i = 0; i < 5; i++)
   moveRazorpayButtons(`razorpay${i + 1}`, `razorpayButtonDestination${i + 1}`);
-
-const row = document.querySelector(".services_row");
-const ss = document.querySelector(".service_image");
-const emoji = document.querySelector(".service_emoji");
-
-setInterval(() => {
-  let stage = +row.dataset.stage;
-  stage = (stage + 1) % 4;
-  ss.src = `./img/performance/${stage}.png`;
-  emoji.src = `./img/emoji/${stage}.png`;
-  row.dataset.stage = stage;
-}, 2000);
