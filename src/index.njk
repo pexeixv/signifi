@@ -45,7 +45,15 @@ title: Signifi
             <p class="text-ter text-base lg:text-lg max-w-lg">
                 Ultra-fast websites, transparent pricing and amazing support. Hosting does not get better than this.
             </p>
-            <a href="#features" class="bg-ter text-pri px-5 py-3 font-black text rounded">Explore</a>
+            <div class="space-x-5 mt-5">
+                <a href="#features"
+                    class="bg-ter text-pri px-5 py-3 font-black text rounded hover:opacity-70 transition-all">Explore</a>
+                <a href="/trial"
+                    class="bg-pri text-ter border-ter/70 border-2 px-5 py-3 font-black text rounded hover:bg-ter/70 hover:text-pri transition-all">Request
+                    a
+                    free
+                    trial</a>
+            </div>
         </div>
 
 
@@ -116,7 +124,9 @@ title: Signifi
             We have plans for every type of user. In case you don't find your preferred plan here, contact us for a
             custom plan.
         </p>
-        <a href="/trial" class="bg-ter text-pri px-5 py-3 font-black text-lg rounded mt-5">Request a free
+        <a href="/trial"
+            class="bg-ter text-pri px-5 py-3 font-black text-lg rounded mt-5 hover:opacity-70 transition-all">Request a
+            free
             trial</a>
         <div
             class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 gap-10 justify-items-center mt-16 lg:mt-24 mx-auto w-full">
@@ -229,16 +239,25 @@ title: Signifi
         </p>
 
 
-        <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-3 mt-16 lg:mt-24 justify-center mx-auto">
+        <div class=" mt-16 lg:mt-24 hidden lg:flex justify-center w-full items-start">
+            <img src="/img/performance/1.webp" class="max-w-2xl w-full rounded-lg" id="changeImage">
+        </div>
 
 
-            <img src="/img/performance/1.png" class="max-w-md w-full lg:w-[20%]">
+        <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-3 justify-center mx-auto mt-16 lg:mt-8">
+
+
+            <img src="/img/performance/1.webp" class="max-w-md w-full lg:w-[20%] rounded cursor-pointer"
+                onmouseover="changeImage(this)">
             <i class="fa-solid fa-caret-down fa-2x lg:-rotate-90"></i>
-            <img src="/img/performance/2.png" class="max-w-md w-full lg:w-[20%]">
+            <img src="/img/performance/2.webp" class="max-w-md w-full lg:w-[20%] rounded cursor-pointer"
+                onmouseover="changeImage(this)">
             <i class="fa-solid fa-caret-down fa-2x lg:-rotate-90"></i>
-            <img src="/img/performance/3.png" class="max-w-md w-full lg:w-[20%]">
+            <img src="/img/performance/3.webp" class="max-w-md w-full lg:w-[20%] rounded cursor-pointer"
+                onmouseover="changeImage(this)">
             <i class="fa-solid fa-caret-down fa-2x lg:-rotate-90"></i>
-            <img src="/img/performance/4.png" class="max-w-md w-full lg:w-[20%]">
+            <img src="/img/performance/4.webp" class="max-w-md w-full lg:w-[20%] rounded cursor-pointer"
+                onmouseover="changeImage(this)">
 
 
         </div>
@@ -364,14 +383,8 @@ title: Signifi
                 value="Your message  was successfully sent to Signifi! We will get in touch ">
             <input type="text" name="_honey" style="display:none">
             <input type="hidden" name="_template" value="table">
-
-
-
-
             <input type="submit" value="Submit"
                 class="bg-ter text-pri px-5 py-3 font-black text-lg rounded cursor-pointer">
-
-
         </form>
 
     </div>

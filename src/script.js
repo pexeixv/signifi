@@ -25,3 +25,7 @@ const collapseNav = () => {
   icon.classList.add("fa-bars");
   icon.classList.remove("fa-xmark");
 };
+
+const image = $("#changeImage");
+
+const changeImage = (that) => (image.src = that.src);

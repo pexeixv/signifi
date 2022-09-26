@@ -8,7 +8,7 @@
             "5GB Mailbox"
         ],
         "price": 50,
-        "link": "<form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLO1l6zVlqJJ6' async> </script></form>",
+        "link": "<form><script defer src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLO1l6zVlqJJ6' async> </script></form>",
         "data_aos": "fade-left",
         "data_aos_delay": "400",
         "billing": "Billed annually"
@@ -22,7 +22,7 @@
             "50GB Mailbox"
         ],
         "price": 200,
-        "link": "<form><script src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLPhcU00LRRTt' async> </script> </form>",
+        "link": "<form><script defer src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_JWLPhcU00LRRTt' async> </script> </form>",
         "data_aos": "fade-right",
         "data_aos_delay": "400",
         "billing": "Billed annually"
