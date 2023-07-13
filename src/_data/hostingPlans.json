@@ -75,7 +75,7 @@
             "150GB SSD"
         ],
         "price": 4000,
-        "link": "<form><script defer src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HOxmxPncdoNfkY' async> </script> </form>",
+        "link": "<form><script defer src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HPAPM9KY5EOVEU' async> </script> </form>",
         "data_aos": "fade-right",
         "data_aos_delay": "200",
         "billing": "Billed monthly"
@@ -97,7 +97,7 @@
             "300GB SSD"
         ],
         "price": 16000,
-        "link": "<form><script defer src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HOxmxPncdoNfkY' async> </script> </form>",
+        "link": "<form><script defer src='https://checkout.razorpay.com/v1/payment-button.js' data-payment_button_id='pl_HPAQpbQF2r9zG4' async> </script> </form>",
         "data_aos": "fade-left",
         "data_aos_delay": "400",
         "billing": "Billed monthly"
